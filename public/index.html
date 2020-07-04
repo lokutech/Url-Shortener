@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+      integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+      crossorigin="anonymous"
+    />
+    <title>My Url Shortener API</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body onload="form.reset()">
+  <div id="container">
+      <h1>My Url Shortener API</h1>
+      <p>
+        Enter the address you would like to shorten similar to https://www.islamqa.info
+      </p>
+      <form action="api/shorturl/new" method="POST" id="form">
+        <input type="text" name="url" required class="form-control" />
+        <button class="btn btn-primary float-right">Submit</button>
+      </form>
+      <h4>Example Usage:</h4>
+      <a id="link" href=""></a
+      >
+      <p></p>
+      <p>Will Redirect to:</p>
+      <a href="https://www.islamqa.info/">https://www.islamqa.info/</a>
+    </div>
+  </body>
+  <script>
+    document.getElementById('link').innerHTML = window.location.hostname + '/1'
+    document.getElementById('link').setAttribute("href", "1")
+  </script>
+</html>
+
+
+<!-- "http://192.168.5.244:5000/2221" -->
