@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
+const config = require('config')
 
-// const url = "mongodb://127.0.0.1:27017/url_shortener";
-const url = "mongodb+srv://loku:goztepe@cluster0-jewru.mongodb.net/url_shortener?retryWrites=true&w=majority";
+const url = config.get('MONGO_URI')
 
 const connectDB = async () => {
   try {

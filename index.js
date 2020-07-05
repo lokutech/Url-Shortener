@@ -5,6 +5,9 @@ const validUrl = require("valid-url");
 const connectDB = require("./db/connection");
 const Url = require("./models/url");
 
+
+
+
 // Connect to Database
 connectDB();
 
@@ -60,6 +63,6 @@ app.post("/api/shorturl/new", (req, res) => {
     res.status(500).json("Server error");
   }
 });
-const PORT = process.env.PORT || 5001;
+const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => console.log(`Listening on port ${PORT}`));

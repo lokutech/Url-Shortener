@@ -1,0 +1,3 @@
+{
+    "MONGO_URI" : "mongodb+srv://loku:goztepe@cluster0-jewru.mongodb.net/url_shortener?retryWrites=true&w=majority"
+}
