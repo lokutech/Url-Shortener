@@ -16,7 +16,7 @@
   <div id="container">
       <h1>Url Shortener API</h1>
       <p>
-        Enter the address you would like to shorten similar to https://www.islamqa.info
+        Enter the address you would like to shorten similar to https://www.wikipedia.org/
       </p>
       <form action="api/shorturl/new" method="POST" id="form">
         <input type="text" name="url" required class="form-control" />
@@ -27,11 +27,11 @@
       >
       <p></p>
       <p>Will Redirect to:</p>
-      <a href="https://www.islamqa.info/">https://www.islamqa.info/</a>
+      <a href="https://www.wikipedia.org/">https://www.wikipedia.org/</a>
     </div>
   </body>
   <script>
-    document.getElementById('link').innerHTML = window.location.hostname + '/1'
+    document.getElementById('link').innerHTML = window.location.hostname + '/9'
     document.getElementById('link').setAttribute("href", "1")
   </script>
 </html>
